@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 :root {
-  --yellow:#f5bf23;
-  --black:#111;
+  --yellow: darkblue;
+  --white: #fff;
   --white:#fff;
   --light-color:#666;
   --light-bg:#eee;
@@ -58,7 +58,7 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  background: var(--black);
+  background: darkblue;
   color: var(--white);
   cursor: pointer;
   font-size: 1.7rem;
@@ -68,8 +68,8 @@ section {
 }
 
 .btn:hover {
-  background: var(--light-color);
-  color: var(--black);
+  background: black;
+  color: var(--light-bg);
 }
 
 @-webkit-keyframes fadeIn {
@@ -105,14 +105,14 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1000;
-  background: var(--black);
+  background: white;
 }
 
 
 .header .logo {
   font-size: 2.5rem;
   text-align: center;
-  width: 220px;
+  width: 150px;
   height: 10%;
   color: var(--black);
   text-transform: capitalize;
@@ -132,7 +132,7 @@ section {
 @media (max-width: 600px)
 {
   .header .logo{
-    width: 48%;
+    width: 30%;
     height: 10%;
     color: var(--black);
     text-transform: capitalize;
@@ -167,13 +167,13 @@ section {
 
 .header .navbar a {
   font-size: 2rem;
-  color: var(--white);
+  color: black;
   text-transform: capitalize;
   margin: 0 1rem;
 }
 
 .header .navbar a:hover {
-  color: var(--light-color);
+  color: darkblue;
 }
 
 .header .icons div {
@@ -189,7 +189,7 @@ section {
 }
 
 .header .icons div:hover {
-  background: var(--black);
+  background: darkblue;
   color: var(--white);
 }
 
@@ -458,14 +458,14 @@ section {
 
 .home .slide .content h3 {
   font-size: 6rem;
-  color: var(--black);
+  color: darkblue;
   text-transform: capitalize;
   text-transform: uppercase;
 }
 
 .home .slide .content p {
   font-size: 1.4rem;
-  color: var(--light-color);
+  color: darkblue;
   line-height: 2;
   padding: 1rem 0;
 }
@@ -527,7 +527,7 @@ section {
 
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: var(--black);
+  color: var(--white);
   text-transform: capitalize;
 }
 
@@ -967,7 +967,7 @@ section {
     top: 99%;
     left: 0;
     right: 0;
-    background: var(--black);
+    background: lightblue;
     border-top: var(--border);
     border-bottom: var(--border);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -1014,7 +1014,7 @@ section {
   }
 }
 footer{
-    background: black;
+    background: white;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -1045,6 +1045,7 @@ footer{
   }
   .content .top .media-icons{
     display: flex;
+    
   }
   .content .top .media-icons a{
     height: 40px;
@@ -1053,7 +1054,7 @@ footer{
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    color: #fff;
+    color: black;
     font-size: 17px;
     text-decoration: none;
     transition: all 0.4s ease;
@@ -1063,21 +1064,21 @@ footer{
   }
   .top .media-icons a:nth-child(1):hover{
     color: #4267B2;
-    background: #fff;
+    background: #b0defa;
   }
   .top .media-icons a:nth-child(2){
     background: #1DA1F2;
   }
   .top .media-icons a:nth-child(2):hover{
     color: #1DA1F2;
-    background: #fff;
+    background: #b0defa;
   }
   .top .media-icons a:nth-child(3){
     background: cornflowerblue;
   }
   .top .media-icons a:nth-child(3):hover{
     color: #E1306C;
-    background: #fff;
+    background: #b0defa;
   }
   .top .media-icons a:nth-child(4){
     background: #0077B5;
@@ -1102,7 +1103,7 @@ footer{
     width: calc(100% / 5 - 10px);
   }
   .content .link-boxes .box .link_name{
-    color: #fff;
+    color: darkblue;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -1122,7 +1123,7 @@ footer{
     list-style: none;
   }
   .content .link-boxes .box li a{
-    color: #fff;
+    color: darkblue;
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
@@ -1145,16 +1146,16 @@ footer{
     border-radius: 4px;
     padding: 0 15px;
     font-size: 15px;
-    color: #fff;
+    color: darkblue;
     margin-top: 5px;
   }
   .link-boxes .input-box input::placeholder{
-    color: #AFAFB6;
+    color: darkblue;
     font-size: 16px;
   }
   .link-boxes .input-box input[type="button"]{
-    background: #fff;
-    color: black;
+    background: darkblue;
+    color: white;
     border: none;
     font-size: 18px;
     font-weight: 500;
@@ -1264,3 +1265,70 @@ footer{
 
 
 /* flip css */
+.services {
+  background: var(--black);
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.services .box-container .box {
+  text-align: center;
+  padding: 2.5rem;
+  background: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+.services .box-container .box:hover {
+  text-align: center;
+  padding: 2.5rem;
+  background:darkblue;
+  color: #fff;
+  transition: .5s;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+
+
+.services .box-container .box:hover img {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.services .box-container .box img {
+  height: 7rem;
+  margin-bottom: .5rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.services .box-container .box h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.services .box-container .box p {
+  font-size: 1.4rem;
+  color: var(--black);
+  line-height: 2;
+}
+/* .services .box-container .box p:hover {
+  font-size: 1.4rem;
+  color: white;
+  line-height: 2;
+} */
+input[type="number"] {
+  /* -moz-appearance: textfield; */
+  -webkit-appearance: none;
+  appearance: none;
+}
