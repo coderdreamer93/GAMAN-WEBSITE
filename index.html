@@ -8,9 +8,11 @@
    <title>GAMAN</title>
 
    <!-- font awesome cdn link  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -153,53 +155,30 @@
 
    <!-- about section starts  -->
 
-   <section class="about" id="about">
-
-      <h1 class="heading" data-aos="fade-right" data-aos-delay="150"> about us </h1>
-
-      <div class="row">
-
-         <div class="video">
-            <video src="images/about-vid.mp4" loop muted autoplay></video>
-         </div>
-
-         <div class="content" data-aos="fade-left" data-aos-delay="150">
-            <h3>We will provide you the best work which you dream for!</h3>
-            <p>At Gaman, we are committed to excellence. Whether it’s delivering exceptional services, creating
-               meaningful relationships, or transforming ideas into results, we’re here to make your journey seamless
-               and rewarding.
-            </p>
-            <!-- <a href="#services" class="btn">read more</a> -->
-         </div>
-
+   <section class="about-us" id="about">
+      <div class="about-us-background">
+         <h1 style="color: white; font-weight: bold; font-size: 50px;">About Us</h1>
       </div>
-
-      <div class="box-container">
-
-         <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-            <h3>20K</h3>
-            <p>HAPPY CUSTOMER</p>
-         </div>
-
-         <div class="box" data-aos="zoom-in-up" data-aos-delay="250">
-            <h3>150+</h3>
-            <p>WORK FORCE</p>
-         </div>
-
-         <div class="box" data-aos="zoom-in-up" data-aos-delay="350">
-            <h3>53</h3>
-            <p>AWARDS</p>
-         </div>
-
-         <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-            <h3>77</h3>
-            <p>PROJECT DONE</p>
-         </div>
-
-      </div>
-
    </section>
 
+   <section class="who-we-are">
+      <div data-aos="zoom-in-up" data-aos-delay="150" class="image-container col-lg-6">
+         <img src="./images/software-company-webdesign-services.jpg" alt="City Background" class="background-image">
+         <img src="./images/software-company1.jpg" alt="Team" class="overlay-image">
+         <img src="./images/pexels-dreamypixel-547114.jpg" alt="Team" class="overlay-image1">
+
+      </div>
+      <div class="content1 col-lg-6" data-aos="fade-left" data-aos-delay="150">
+         <h2 style="color: black; font-weight: bold; font-size: 40px;">Who We Are</h2>
+         <p style="color: black; font-weight: bold; font-size: 20px;">
+            We will provide you the best work which you dream for!
+         </p>
+         <p style="color: black;font-weight: bold; font-size: 15px;">
+            At Gaman, we are committed to excellence. Whether it’s delivering exceptional services, creating meaningful
+            relationships, or transforming ideas into results, we’re here to make your journey seamless and rewarding.
+         </p>
+      </div>
+   </section>
    <!-- about section ends -->
 
    <!-- services section starts  -->
@@ -276,14 +255,29 @@
       </div>
 
    </section> -->
-   <section class="services" id="services">
 
-      <div class="heading">
-         <span data-aos="fade-right" data-aos-delay="150">our services</span>
-         <!-- <h1>countless expericences</h1> -->
+   <section class="about-us" id="services">
+      <div class="about-us-background1">
+         <h1 style="color: white; font-weight: bold; font-size: 50px;">Our Services</h1>
       </div>
+   </section>
+   <div class="content2" data-aos="fade-left" data-aos-delay="150">
+      <!-- <h2 style="color: white; font-weight: bold; font-size: 40px;" class="text-center">Who We Are</h2>
+      <p style="color: white; font-weight: bold; font-size: 20px;">
+         We will provide you the best work which you dream for!
+      </p> -->
+      <p style="color: black;font-weight: bold; font-size: 20px;">
+         At Gaman, we offer tailored solutions to meet your business needs,
+         <!-- <br /> -->
+         from strategic consultations to efficient
+         project execution. Our expert team ensures excellence,
+         <!-- <br /> -->
+         reliability, and measurable results, making us your
+         trusted partner in achieving success.
+      </p>
+   </div>
+   <section class="services">
       <div class="box-container">
-
          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
             <i class="fas fa-briefcase fa-3x"></i>
             <h3>Business Solutions
@@ -359,38 +353,128 @@
    <!-- contact section starts  -->
 
 
-   <section class="contact" id="contact">
+   <section class="about-us" id="contact">
+      <div class="about-us-background2">
+         <h1 style="color: white; font-weight: bold; font-size: 50px;">Contact Us</h1>
+      </div>
+   </section>
+   <div class="container my-5">
+      <form class="row g-3">
+         <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Full Name</label>
+            <input type="name" class="form-control" id="inputEmail4" placeholder="Enter your Full Name">
+         </div>
+         <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputPassword4" placeholder="Enter your Email">
+         </div>
+         <div class="col-6">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+         </div>
+         <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control no-arrow" id="phone" placeholder="Enter your Phone Number"
+               oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+         </div>
+         <!-- <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div> -->
 
-      <h1 class="heading" data-aos="fade-right" data-aos-delay="150"> contact <span> me </span> </h1>
+         <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+         </div>
+         <!-- <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>State 1</option>
+            <option>State 2</option>
+            <option>State 3</option>
+          </select>
+        </div> -->
 
+         <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="12345">
+         </div>
+         <div class="col-12">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" id="gridCheck">
+               <label class="form-check-label" for="gridCheck">
+                  Check me out
+               </label>
+            </div>
+         </div>
+         <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+         </div>
+      </form>
+   </div>
 
+   <div class="section-title">Office Locations</div>
+   <div class="locations-container">
+      <div class="location-card">
+         <div class="location-city">Boston</div>
+         <div class="location-details">
+            One Newton Place<br>
+            275 Washington Street, Suite 405<br>
+            Newton, MA 02458
+         </div>
+      </div>
+      <div class="location-card">
+         <div class="location-city">Boston</div>
+         <div class="location-details">
+            One Newton Place<br>
+            275 Washington Street, Suite 405<br>
+            Newton, MA 02458
+         </div>
+      </div>
+      <div class="location-card">
+         <div class="location-city">Boston</div>
+         <div class="location-details">
+            One Newton Place<br>
+            275 Washington Street, Suite 405<br>
+            Newton, MA 02458
+         </div>
+      </div>
+      <div class="location-card">
+         <div class="location-city">Boston</div>
+         <div class="location-details">
+            One Newton Place<br>
+            275 Washington Street, Suite 405<br>
+            Newton, MA 02458
+         </div>
+      </div>
+      <div class="location-card">
+         <div class="location-city">Boston</div>
+         <div class="location-details">
+            One Newton Place<br>
+            275 Washington Street, Suite 405<br>
+            Newton, MA 02458
+         </div>
+      </div>
+      <div class="location-card">
+         <div class="location-city">Boston</div>
+         <div class="location-details">
+            One Newton Place<br>
+            275 Washington Street, Suite 405<br>
+            Newton, MA 02458
+         </div>
+      </div>
+   </div>
 
-      <div class="row">
+   <div class="container ">
+      <div class="row col-lg-12">
 
-         <form action=""  data-aos="zoom-in-up" data-aos-delay="100">
-
-            <input type="text" placeholder="Full Name" required class="box">
-            <input type="email" placeholder="Enter your Email" required class="box">
-
-            <input type="tel" placeholder="Enter you Phone Number" required class="box">
-
-            <!-- <textarea id="message" name="message" placeholder="Enter your message" required 
-          ></textarea> -->
-            <input type="submit" class="btn flex-start" style="margin-top: 15%;" value="send message">
-         </form>
-
-         <iframe class="map"  data-aos="zoom-in-up" data-aos-delay="150"
+         <iframe class="map" data-aos="zoom-in-up" data-aos-delay="150"
             src="https://maps.google.com/maps?q=karachi%20jamshed%20road%203%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
             allowfullscreen="" loading="lazy"></iframe>
 
       </div>
-
-
-   </section>
-
-
-
-
+   </div>
 
 
    <!-- contact section ends -->
@@ -449,8 +533,6 @@
                <li><a href="tel:+1234567890"><span class="fas fa-phone"></span> +123-456-7890</a></li>
                <li><a href="mailto:info@gaman.com"><span class="fas fa-envelope"></span> www.gaman.com</a></li>
                <li><a href="#"><span class="fas fa-clock"></span> 11:00am - 5:00am</a></li>
-
-
             </ul>
             <!-- <ul class="box">
                <li class="link_name">Get Help</li>
