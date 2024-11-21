@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GAMAN</title>
+
+   <!-- font awesome cdn link  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+
+<body>
+
+   <!-- header section starts  -->
+
+   <header class="header">
+
+      <img src="./images/GAMAN STAMP 4.5X3CM PREVIEW ONLY.pdf.png" class="logo" alt="">
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="service.html">services</a>
+        <a href="contactUs.html">contact</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars">
+
+         </div>
+
+         <div id="info-btn" class="fab fa-instagram"></div>
+         <div id="search-btn" class="fab fa-facebook-f"></div>
+         <div id="login-btn" class="fas fa-user"></div>
+      </div>
+
+      <form action="" class="search-form">
+         <input type="search" name="" placeholder="search here..." id="search-box">
+         <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <form action="" class="login-form">
+         <h3>login form</h3>
+         <input type="email" placeholder="enter your email" class="box">
+         <input type="password" placeholder="enter your password" class="box">
+         <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+            <a href="#">forgot password?</a>
+         </div>
+         <input type="submit" value="login now" class="btn">
+         <p>don't have an account <a href="#">create one!</a></p>
+      </form>
+
+   </header>
+
+   <div class="contact-info">
+
+      <div id="close-contact-info" class="fas fa-times"></div>
+
+      <div class="info">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>office address</h3>
+         <p>Office 1002 – 10th Floor, Al Rahim Trader Tower, Seari Quarters، I.I. Chundrigar، Karachi, Karachi City,
+            Sindh 74100</p>
+      </div>
+
+
+      <div class="info">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <a href="mailto:Info@gaman.com">Info@gaman.com</a>
+         <a href="mailto:Recruitment@orbhex.com">Recruitment@orbhex.com</a>
+         <a href="mailto:Hr@orbhex.com"> Hr@orbhex.com</a>
+      </div>
+
+
+      <div class="share">
+         <a href="https://www.facebook.com/Orbhex" class="fab fa-facebook-f"></a>
+         <!-- <a href="#" class="fab fa-twitter"></a> -->
+         <a href="https://instagram.com/orbhexsol" class="fab fa-instagram"></a>
+         <a href="https://www.linkedin.com/company/orbhex/" class="fab fa-linkedin"></a>
+      </div>
+
+   </div>
+
+   <!-- header section ends -->
+
+   <!-- home section starts  -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+      <div class="about-us-background1">
+        <h1 style="color: white; font-weight: bold; font-size: 50px;">Contact Us</h1>
+     </div>    
+   </section>
+
+
+<section class="about-us" id="contact">
+    <!-- <div class="about-us-background2">
+       <h1 style="color: white; font-weight: bold; font-size: 50px;">Contact Us</h1>
+    </div> -->
+ </section>
+ <div class="container my-5">
+    <form class="row g-3">
+       <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Full Name</label>
+          <input type="name" class="form-control" id="inputEmail4" placeholder="Enter your Full Name">
+       </div>
+       <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputPassword4" placeholder="Enter your Email">
+       </div>
+       <div class="col-6">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+       </div>
+       <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="number" class="form-control no-arrow" id="phone" placeholder="Enter your Phone Number"
+             oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+       </div>
+       <!-- <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div> -->
+
+       <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+       </div>
+       <!-- <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>State 1</option>
+          <option>State 2</option>
+          <option>State 3</option>
+        </select>
+      </div> -->
+
+       <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="12345">
+       </div>
+       <div class="col-12">
+          <div class="form-check">
+             <input class="form-check-input" type="checkbox" id="gridCheck">
+             <label class="form-check-label" for="gridCheck">
+                Check me out
+             </label>
+          </div>
+       </div>
+       <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+       </div>
+    </form>
+ </div>
+
+ <div class="section-title">Office Locations</div>
+ <div class="locations-container">
+    <div class="location-card" data-aos="zoom-in-up" data-aos-delay="150">
+       <div class="location-city">Boston</div>
+       <div class="location-details">
+          One Newton Place<br>
+          275 Washington Street, Suite 405<br>
+          Newton, MA 02458
+       </div>
+    </div>
+    <div class="location-card" data-aos="zoom-in-up" data-aos-delay="250">
+       <div class="location-city">Boston</div>
+       <div class="location-details">
+          One Newton Place<br>
+          275 Washington Street, Suite 405<br>
+          Newton, MA 02458
+       </div>
+    </div>
+    <div class="location-card" data-aos="zoom-in-up" data-aos-delay="350">
+       <div class="location-city">Boston</div>
+       <div class="location-details">
+          One Newton Place<br>
+          275 Washington Street, Suite 405<br>
+          Newton, MA 02458
+       </div>
+    </div>
+    <div class="location-card" data-aos="zoom-in-up" data-aos-delay="450">
+       <div class="location-city">Boston</div>
+       <div class="location-details">
+          One Newton Place<br>
+          275 Washington Street, Suite 405<br>
+          Newton, MA 02458
+       </div>
+    </div>
+    <div class="location-card" data-aos="zoom-in-up" data-aos-delay="550">
+       <div class="location-city">Boston</div>
+       <div class="location-details">
+          One Newton Place<br>
+          275 Washington Street, Suite 405<br>
+          Newton, MA 02458
+       </div>
+    </div>
+    <div class="location-card" data-aos="zoom-in-up" data-aos-delay="600">
+       <div class="location-city">Boston</div>
+       <div class="location-details">
+          One Newton Place<br>
+          275 Washington Street, Suite 405<br>
+          Newton, MA 02458
+       </div>
+    </div>
+ </div>
+
+ <div class="container ">
+    <div class="row col-lg-12">
+
+       <iframe class="map" data-aos="zoom-in-up" data-aos-delay="150"
+          src="https://maps.google.com/maps?q=karachi%20jamshed%20road%203%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+ </div>
+
+ 
+ <footer class="mt-3">
+    <div class="content">
+       <div class="top">
+          <div class="logo-details">
+             <!-- <i class="fab fa-slack"></i> -->
+             <span class="logo_name">
+                <img src="./images/GAMAN STAMP 4.5X3CM PREVIEW ONLY.pdf.png" width="140" class="logo" alt="">
+             </span>
+          </div>
+          <div class="media-icons">
+             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+       </div>
+       <div class="link-boxes">
+          <ul class="box">
+             <li class="link_name">Company</li>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <li><a href="#services">Service</a></li>
+          </ul>
+          <!-- <ul class="box">
+       <li class="link_name">Services</li>
+       <li><a href="#">App design</a></li>
+       <li><a href="#">Web design</a></li>
+       <li><a href="#">Logo design</a></li>
+       <li><a href="#">Banner design</a></li>
+    </ul> -->
+          <ul class="box">
+             <li class="link_name">Contact</li>
+             <!-- <li><a href="#">Profile</a></li>
+       <li><a href="#">My account</a></li>
+       <li><a href="#">Prefrences</a></li>
+       <li><a href="#">Purchase</a></li> -->
+
+             <li><a href="#"><span class="fas fa-map"></span> Karachi, Pakistan</a></li>
+             <li><a href="tel:+1234567890"><span class="fas fa-phone"></span> +123-456-7890</a></li>
+             <li><a href="mailto:info@gaman.com"><span class="fas fa-envelope"></span> www.gaman.com</a></li>
+             <li><a href="#"><span class="fas fa-clock"></span> 11:00am - 5:00am</a></li>
+          </ul>
+          <!-- <ul class="box">
+       <li class="link_name">Get Help</li>
+       <li><a href="#">FAQ</a></li>
+       <li><a href="#">Shipping</a></li>
+       <li><a href="#">Returns</a></li>
+       <li><a href="#">Order Statuss</a></li>
+    </ul> -->
+          <ul class="box input-box">
+             <li class="link_name">Subscribe</li>
+             <li><input type="text" placeholder="Enter your email"></li>
+             <li><input type="button" value="Subscribe"></li>
+          </ul>
+       </div>
+    </div>
+    <div class="bottom-details">
+       <div class="bottom_text">
+          <span class="copyright_text">© 2019-2024 Company. All rights reserved</span>
+          <span class="policy_terms">
+             <a href="#">Privacy policy</a>
+             <a href="#">Terms & condition</a>
+          </span>
+       </div>
+    </div>
+ </footer>
+
+ <!-- footer section ends -->
+
+
+
+
+ <script
+    src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&paint_origin=&libraries=geometry,search&v=3.exp&language=en&callback=onApiLoad"></script>
+
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+ <!-- custom js file link  -->
+ <script src="app.js"></script>
+
+ <script>
+
+    lightGallery(document.querySelector('.projects .box-container'));
+
+ </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+ <script>
+
+    AOS.init({
+       duration: 800,
+       offset: 150,
+    });
+
+ </script>
+</body>
+
+</html>

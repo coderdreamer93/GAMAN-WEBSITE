@@ -21,7 +21,11 @@
   text-decoration: none;
   /* background-color:; */
 }
-
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure the body spans the full width */
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -49,7 +53,7 @@ section {
 .heading {
   margin-bottom: 3rem;
   font-size: 3rem;
-  color: var(--white);
+  color: var(--black);
   text-transform: capitalize;
   padding-left: 1rem;
   border-left: 1rem solid var(--white);
@@ -507,6 +511,7 @@ section {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 3rem;
+  /* background-color: ; */
 }
 
 .about .row .video {
@@ -527,13 +532,13 @@ section {
 
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: var(--white);
+  color: var(--black);
   text-transform: capitalize;
 }
 
 .about .row .content p {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--black);
   line-height: 2;
   padding: 1rem 0;
 }
